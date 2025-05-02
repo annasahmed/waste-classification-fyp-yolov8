@@ -2,8 +2,6 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import tempfile
-import torch
-import os
 import time
 import pandas as pd
 import numpy as np
@@ -1055,7 +1053,7 @@ def main():
                 st.markdown('</div>', unsafe_allow_html=True)
             
             # Clean up the temp file
-            os.unlink(temp_path)
+            # os.unlink(temp_path)
     
     # Tab 2: Analytics Dashboard
     elif selected_tab == "📊 Analytics Dashboard":
